@@ -1,0 +1,43 @@
+$-clr-white: hsl(0 0% 100%);
+$-clr-black: hsl(0 0% 0%);
+$-clr-dark-gray: hsl(230 10% 12%);
+$-clr-gray: hsl(230 5% 26%);
+$-clr-light-gray: hsl(0 0% 66%);
+$-clr-gold: hsl(60 41% 76%);
+$-clr-dark-gold: hsl(18 95% 8%);
+$-clr-green: hsl(142 60% 51%);
+$-clr-orange: hsl(10 83% 58%);
+
+$default: (
+  neutral: (
+    "000": $-clr-white,
+    "1000": $-clr-black,
+  ),
+  primary: (
+    "000": $-clr-light-gray,
+    "300": $-clr-gray,
+    "600": $-clr-dark-gray,
+  ),
+  accent: (
+    "000": $-clr-gold,
+    "800": $-clr-dark-gold,
+  ),
+  button: (
+    "shopee": $-clr-orange,
+    "whatsapp": $-clr-green,
+  ),
+);
+
+// contextual color token
+$color-neutral-000: var(--neutral-000);
+$color-neutral-1000: var(--neutral-1000);
+
+$color-primary-000: var(--primary-000);
+$color-primary-300: var(--primary-300);
+$color-primary-600: var(--primary-600);
+
+$color-accent-000: var(--accent-000);
+$color-accent-800: var(--accent-800);
+
+$color-button-orange: var(--button-orange);
+$color-button-green: var(--button-green);

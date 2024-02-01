@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: $body-font-family;
+  $font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  color: $body-text-color;
+  line-height: $body-line-height;
+  height: $body-height;
+  background-color: $body-background-color;
+  min-height: 100vh;
+}
+
+.section {
+  padding: 2rem 0 4rem;
+
+  @include mq(medium) {
+    padding: 4rem 0 6rem;
+  }
+}

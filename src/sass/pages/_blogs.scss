@@ -1,0 +1,57 @@
+@use "../abstracts/" as *;
+
+.blogs-section {
+  .heading-1 {
+    border: 0;
+    &::after {
+      border: 0;
+    }
+  }
+}
+
+.blogs-list {
+  & > * {
+    display: block;
+    padding-block: 2rem;
+    border-block: 1px solid $color-neutral-000;
+    transition: background-color 800ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-neutral-1000;
+    }
+    &:not(:first-child) {
+      border-block-start: none;
+    }
+
+    .cover-blog {
+      width: 100%;
+      aspect-ratio: 5 / 3;
+      object-fit: cover;
+    }
+
+    .blog-desc {
+      position: relative;
+      margin-block-start: 1rem;
+      --flow-spacer: 3rem;
+    }
+
+    @include mq(medium) {
+      padding-block-end: 6rem;
+      padding-inline: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      .blog-desc {
+        margin-block-start: 0;
+      }
+
+      .author {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

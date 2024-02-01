@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+@each $screen-size, $size-map in $font-sizes {
+  @each $size-name, $size-value in $size-map {
+    @if $screen-size == small {
+      .fs-#{$size-name} {
+        font-size: var(--fs-#{$size-name});
+      }
+    }
+  }
+}
+
+.heading-1 {
+  border-block: 1px solid $color-neutral-000;
+  padding-block: 2rem;
+  position: relative;
+  margin-block: 3rem;
+
+  @include mq(medium) {
+    margin-block: 6rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0.5rem 0;
+    border-block: 1px solid $color-neutral-000;
+  }
+}
+
+.heading-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1rem, 5vw, 2rem);
+  border-block: 1px solid $color-primary-000;
+  padding-block: 1rem;
+}

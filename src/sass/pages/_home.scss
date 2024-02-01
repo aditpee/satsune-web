@@ -1,0 +1,84 @@
+@use "../abstracts/" as *;
+
+.gallery-slider .swiper-wrapper {
+  transition-timing-function: linear;
+  & > * {
+    overflow: hidden;
+
+    img {
+      aspect-ratio: 5 / 3;
+      display: block;
+      object-fit: cover;
+      transition: transform 300ms, filter 300ms;
+    }
+    &:hover img {
+      transform: scale(1.2);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 99;
+      inset: 0;
+      background-image: linear-gradient(
+        $color-neutral-1000,
+        transparent 35% 65%,
+        $color-neutral-1000
+      );
+      // background-color: black;
+    }
+  }
+}
+
+.hero-section {
+  // height: calc(100vh - 4rem);
+  .headline {
+    transform: translateX(-1%);
+  }
+
+  .button.primary {
+    margin-top: clamp(5rem, 7vw, 7rem);
+  }
+
+  .satsune-icon {
+    display: none;
+  }
+
+  @include mq(medium) {
+    position: relative;
+
+    .satsune-icon {
+      display: block;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      bottom: 1.5rem;
+
+      &.right {
+        right: 1rem;
+      }
+      &.left {
+        left: 1rem;
+      }
+
+      .line {
+        background-color: $color-primary-000;
+        width: 1px;
+        height: 5rem;
+      }
+    }
+
+    @include mq(large) {
+      .satsune-icon {
+        &.right {
+          right: 2rem;
+        }
+        &.left {
+          left: 2rem;
+        }
+      }
+    }
+  }
+}

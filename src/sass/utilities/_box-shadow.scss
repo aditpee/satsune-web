@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.box-shadow-1 {
+  box-shadow: 10px 9px 11.5px $color-neutral-1000;
+}
+
+.box-shadow-2 {
+  box-shadow: 0 -2px 12.5px $color-neutral-1000;
+
+  @include mq(large) {
+    box-shadow: 0 -5px 12.5px $color-neutral-1000;
+  }
+}
+
+.box-shadow-3 {
+  box-shadow: -4px 0 12.5px $color-neutral-1000;
+}

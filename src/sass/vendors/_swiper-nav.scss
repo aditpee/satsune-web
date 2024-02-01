@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+:is(.swiper-button-prev, .swiper-button-next) {
+  color: $color-primary-300;
+  transition: color 300ms, opacity 300ms;
+
+  &:hover {
+    color: $color-primary-000;
+  }
+}

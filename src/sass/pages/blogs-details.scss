@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.blog-details-section {
+  .img-blog {
+    @include mq(medium) {
+      margin-block-end: 6rem;
+    }
+  }
+}
+
+.blog-contents {
+  & > * {
+    @include mq(medium) {
+      --flow-spacer: 10rem;
+      .blog-content {
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+        gap: 3rem;
+        --flow-spacer: 2em;
+        margin-block-start: 6rem;
+
+        p {
+          max-width: 60ch;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-of-type(even) {
+        .blog-content {
+          grid-template-columns: 7fr 2fr;
+
+          & > *:first-child {
+            grid-column: 2;
+          }
+          & > *:last-child {
+            grid-column: 1;
+            grid-row: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+.line-accessory {
+  padding-inline: $margin-phone;
+  margin-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.line-accessory.line-2 {
+  transform: scaleY(-1);
+}
+
+.line-accessory::before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: $color-primary-000;
+  margin-left: auto;
+}
+
+.line-accessory::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: $color-primary-000;
+  margin-inline: auto;
+  transform: translateX(-20%);
+}
+
+@include mq(medium) {
+  .line-accessory {
+    display: none;
+  }
+}

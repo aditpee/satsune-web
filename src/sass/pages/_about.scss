@@ -1,0 +1,85 @@
+@use "../abstracts/" as *;
+
+.about-logo {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "?";
+    animation: 5.5s question;
+    transition: all 300ms;
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    transform: rotate(30deg);
+    font-weight: 700;
+    font-size: 4rem;
+    color: $color-primary-300;
+
+    @include mq(medium) {
+      font-size: 7rem;
+    }
+    @include mq(large) {
+      font-size: 8.5rem;
+    }
+  }
+
+  &:hover::after {
+    animation: 5.5s question infinite;
+  }
+}
+
+.about-list {
+  --flow-spacer: 3.6rem;
+  overflow: hidden;
+
+  & .wrapper {
+    max-height: 0;
+    transition: max-height 300ms;
+  }
+  & img {
+    transform: rotate(-90deg);
+    transition: transform 300ms;
+  }
+
+  &.expanded {
+    img {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@keyframes question {
+  0% {
+    color: $color-primary-000;
+    transform: rotate(30deg);
+  }
+  15% {
+    color: $color-primary-000;
+    transform: rotate(10deg);
+  }
+  30% {
+    color: $color-primary-000;
+    transform: rotate(30deg);
+  }
+  45% {
+    color: $color-primary-000;
+    transform: rotate(10deg);
+  }
+  60% {
+    color: $color-primary-000;
+    transform: rotate(30deg);
+  }
+  75% {
+    color: $color-primary-000;
+    transform: rotate(10deg);
+  }
+  90% {
+    color: $color-primary-000;
+    transform: rotate(30deg);
+  }
+  to {
+    color: $color-primary-300;
+    transform: rotate(30deg);
+  }
+}

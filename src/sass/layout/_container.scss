@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+.container {
+  padding-inline: 1rem;
+
+  @include mq(medium) {
+    &.small {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+    &.medium {
+      max-width: 63rem;
+      margin-inline: auto;
+    }
+  }
+
+  @include mq(large) {
+    max-width: 75rem;
+    margin-inline: auto;
+  }
+
+  @include mq(x-large) {
+    max-width: 80rem;
+  }
+}
