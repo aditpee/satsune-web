@@ -4,7 +4,7 @@
   position: absolute;
   inset: 0;
   animation: popupLoading 2s;
-  background-color: $loading-background-color;
+  // background-color: $loading-background-color;
 
   &::before {
     content: "";
@@ -12,7 +12,7 @@
     inset-block: 0;
     left: 0;
     width: 100%;
-    background-color: $loading-color;
+    // background-color: $loading-color;
     animation: loading 2s ease-in-out infinite;
   }
 }

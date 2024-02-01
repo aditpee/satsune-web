@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .line-accessory {
-  padding-inline: $margin-phone;
+  padding-inline: 1rem;
   margin-block: 1.5rem;
   display: flex;
   flex-direction: column;
