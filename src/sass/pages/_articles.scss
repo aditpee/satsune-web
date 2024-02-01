@@ -120,15 +120,20 @@
       transition: all 0 !important;
     }
   }
+  .articles-slider :is(.swiper-button-next, .swiper-button-prev) {
+    display: none;
+  }
 
   @include mq(medium) {
     .articles-slider {
       max-width: clamp(45rem, 63vw, 59rem);
 
       .swiper-button-prev {
+        display: block;
         left: calc(clamp(3rem, 5vw, 5rem) * -1);
       }
       .swiper-button-next {
+        display: block;
         right: calc(clamp(3rem, 5vw, 5rem) * -1);
       }
     }
