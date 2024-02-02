@@ -83,14 +83,14 @@
       "preview_front": "./img/articles/articles-2/article_preview_2.jpg",
       "preview_back": "./img/articles/articles-2/article_preview_3.jpg",
       "sizes": {
-        "s": 1,
-        "m": 1,
-        "l": 1,
-        "xl": 0
+        "s": 0,
+        "m": 5,
+        "l": 0,
+        "xl": 1
       },
       "stock": 9,
-      "price": "180.000 IDR",
-      "diskon": "200.000 IDR",
+      "price": "120.000 IDR",
+      "diskon": "400.000 IDR",
       "sticker": "./img/articles/articles-2/article_sticker.png",
       "shopee_path": "https://shopee.com",
       "whatsapp_path": "https://wa.me",
