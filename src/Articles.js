@@ -21,7 +21,10 @@ const Articles = () => {
   return (
     <main className="articles">
       <section className="articles-section section text-center padding-block-end-14">
-        <div className="articles-container mx-auto">
+        <div
+          onLoad={(e) => e.currentTarget.classList.add("max-content")} //for bug swiper slider
+          className="articles-container mx-auto"
+        >
           <Swiper
             onSlideChange={(swiper) => {
               const articleId = parseInt(

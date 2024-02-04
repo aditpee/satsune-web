@@ -15,7 +15,7 @@
   }
 
   .swiper-slide {
-    transition: filter 300ms, transform 300ms;
+    transition: all 300ms;
     aspect-ratio: 1;
     position: relative;
 
@@ -110,7 +110,7 @@
   }
 }
 
-.articles-container {
+.articles-container.max-content {
   @include mq(small) {
     // for button swiper navigation
     transform: scale(1);
