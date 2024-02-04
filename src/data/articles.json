@@ -1,0 +1,68 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "name": "Aki Hayakawa",
+      "quote": "\"Enemies are enemies... we're only using them. I have no intention of getting friendly with one.\" ~Hayakawa aki",
+      "desc": "Artikel pertama dari kami ni guys yang mengambil dari salah satu karakter dari anime Chainsaw Man yaitu Aki Hayakawa. Buruan di order coyy!!",
+      "cover": "./img/articles/articles-1/article_cover.jpg",
+      "bg": "./img/articles/articles-1/article_bg.png",
+      "preview": "./img/articles/articles-1/article_preview_1.jpg",
+      "preview_front": "./img/articles/articles-1/article_preview_2.jpg",
+      "preview_back": null,
+      "sizes": {
+        "s": 0,
+        "m": 3,
+        "l": 5,
+        "xl": 4
+      },
+      "stock": 12,
+      "price": "120.000 IDR",
+      "diskon": "140.000 IDR",
+      "sticker": "./img/articles/articles-1/article_sticker.jpg",
+      "shopee_path": "https://shopee.com",
+      "whatsapp_path": "https://wa.me",
+      "details": [
+        "details satu",
+        "details dua",
+        "details tiga",
+        "details empat"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Thorfinn",
+      "quote": "\"Lorem ipsum dolor sit amet consectetur. Fermentum est duis interdum placerat sed. Molestie lectus metus amet consequat feugiat et. Magna qui\" ~Hayakawa aki",
+      "desc": "Artikel pertama dari kami ni guys yang mengambil dari salah satu karakter dari anime Chainsaw Man yaitu Aki Hayakawa. Buruan di order coyy!!",
+      "cover": "./img/articles/articles-2/article_cover.jpg",
+      "bg": "./img/articles/articles-2/article_bg.png",
+      "preview": "./img/articles/articles-2/article_preview_1.jpg",
+      "preview_front": "./img/articles/articles-2/article_preview_2.jpg",
+      "preview_back": "./img/articles/articles-2/article_preview_3.jpg",
+      "sizes": {
+        "s": 0,
+        "m": 5,
+        "l": 0,
+        "xl": 1
+      },
+      "stock": 9,
+      "price": "120.000 IDR",
+      "diskon": "400.000 IDR",
+      "sticker": "./img/articles/articles-2/article_sticker.png",
+      "shopee_path": "https://shopee.com",
+      "whatsapp_path": "https://wa.me",
+      "details": [
+        "details satu",
+        "details dua",
+        "details tiga",
+        "details empat"
+      ]
+    }
+  ],
+
+  "coming_soon": {
+    "img": "./img/articles/coming_soon.png",
+    "title": "?????",
+    "desc": "Coming Soon, di tunggu ya next article dari kami:)"
+  }
+}

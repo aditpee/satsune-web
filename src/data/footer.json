@@ -1,0 +1,29 @@
+{
+  "footer": {
+    "brand_desc": "Rumah bagi pecinta anime yang memahami bahwa pakaian bukan hanya sekedar kain, tetapi juga merupakan kanvas untuk merayakan hasrat dan identitas kita dalam dunia anime.",
+    "social_media": [
+      {
+        "name": "Instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "name": "Shopee",
+        "link": "https://Shopee.com"
+      },
+      {
+        "name": "Tiktok",
+        "link": "https://tiktok.com"
+      }
+    ],
+    "contact_us": [
+      {
+        "name": "+62888-1234-1234",
+        "link": "https://wa.me"
+      },
+      {
+        "name": "sastune@gmail.com",
+        "link": ""
+      }
+    ]
+  }
+}
