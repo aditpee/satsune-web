@@ -1,6 +1,6 @@
 import logo from "./img/logo.svg";
 import arrow from "./img/icons/arrow.svg";
-import data from "./data/data.json";
+import data from "./data/about.json";
 
 const About = () => {
   const about = data.about;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import data from "./data/data.json";
+import data from "./data/footer.json";
 
 const Footer = () => {
   const footer = data.footer;

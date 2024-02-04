@@ -11,7 +11,7 @@ import { Navigation, Thumbs } from "swiper/modules";
 import NotFound from "./NotFound";
 import cartIcon from "./img/icons/cart.svg";
 import arrow from "./img/icons/arrow.svg";
-import data from "./data/data.json";
+import data from "./data/articles.json";
 
 const ArticlesDetails = () => {
   const { id } = useParams();

@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import data from "./data/data.json";
+import data from "./data/articles.json";
 
 const Articles = () => {
   const comingSoon = data.coming_soon;

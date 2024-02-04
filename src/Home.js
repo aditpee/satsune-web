@@ -8,7 +8,7 @@ import "swiper/css/autoplay";
 
 import title from "./img/logo.svg";
 import satsuneIcon from "./img/icons/satsune.svg";
-import data from "./data/data.json";
+import data from "./data/home.json";
 
 const Home = () => {
   const home = data.home;
