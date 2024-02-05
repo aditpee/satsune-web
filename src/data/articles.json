@@ -13,27 +13,27 @@
       "sizes": {
         "s": 0,
         "m": 3,
-        "l": 5,
-        "xl": 4
+        "l": 4,
+        "xl": 1
       },
-      "stock": 12,
+      "stock": 8,
       "price": "120.000 IDR",
       "diskon": "140.000 IDR",
       "sticker": "./img/articles/articles-1/article_sticker.jpg",
       "shopee_path": "https://shopee.com",
       "whatsapp_path": "https://wa.me",
       "details": [
-        "details satu",
-        "details dua",
-        "details tiga",
-        "details empat"
+        "Cotton Combed 24s",
+        "Sablon Plastisol",
+        "Gambar Original",
+        "Free Stiker"
       ]
     },
     {
       "id": 2,
       "name": "Thorfinn",
-      "quote": "\"Lorem ipsum dolor sit amet consectetur. Fermentum est duis interdum placerat sed. Molestie lectus metus amet consequat feugiat et. Magna qui\" ~Hayakawa aki",
-      "desc": "Artikel pertama dari kami ni guys yang mengambil dari salah satu karakter dari anime Chainsaw Man yaitu Aki Hayakawa. Buruan di order coyy!!",
+      "quote": "\"I want to be a stronger person\" ~Thorfinn",
+      "desc": "2nd drop Thorfinn from anime Vinland Saga",
       "cover": "./img/articles/articles-2/article_cover.jpg",
       "bg": "./img/articles/articles-2/article_bg.png",
       "preview": "./img/articles/articles-2/article_preview_1.jpg",
@@ -41,21 +41,21 @@
       "preview_back": "./img/articles/articles-2/article_preview_3.jpg",
       "sizes": {
         "s": 0,
-        "m": 5,
-        "l": 0,
-        "xl": 1
+        "m": 1,
+        "l": 4,
+        "xl": 2
       },
-      "stock": 9,
+      "stock": 7,
       "price": "120.000 IDR",
-      "diskon": "400.000 IDR",
+      "diskon": "140.000 IDR",
       "sticker": "./img/articles/articles-2/article_sticker.png",
       "shopee_path": "https://shopee.com",
       "whatsapp_path": "https://wa.me",
       "details": [
-        "details satu",
-        "details dua",
-        "details tiga",
-        "details empat"
+        "Cotton Combed 24s",
+        "Sablon Plastisol",
+        "Gambar Original",
+        "Free Stiker"
       ]
     }
   ],
