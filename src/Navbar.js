@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+
+import useOutsideClick from "./useOutsideClick";
+
 import logo from "./img/logo.svg";
 
 const Navbar = () => {
@@ -22,6 +25,17 @@ const Navbar = () => {
     menuToggle.classList.toggle("hidden");
     nav.classList.toggle("hidden");
   };
+
+  const handleOutsideClick = () => {
+    const nav = ref.current;
+    const menuToggle = nav.previousElementSibling;
+
+    if (!nav.classList.contains("hidden")) {
+      nav.classList.add("hidden");
+      menuToggle.classList.add("hidden");
+    }
+  };
+  const ref = useOutsideClick(handleOutsideClick);
 
   const handleLinkClick = (e) => {
     const nav = e.currentTarget.parentElement.parentElement;
@@ -54,7 +68,7 @@ const Navbar = () => {
           className="menu-toggle hidden"
         ></button>
 
-        <nav className="nav bg-primary-600 hidden">
+        <nav ref={ref} className="nav bg-primary-600 hidden">
           <span className="line-accessory"></span>
           <ul className="clr-primary-000">
             <li
