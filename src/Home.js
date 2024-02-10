@@ -51,7 +51,7 @@ const Home = () => {
           centeredSlides={true}
           allowTouchMove={false}
           loop={true}
-          speed={2000}
+          speed={3000}
           autoplay={{
             delay: 1,
             // pauseOnMouseEnter: true,
