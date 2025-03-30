@@ -9,12 +9,52 @@ import "swiper/css/autoplay";
 import title from "./img/logo.svg";
 import satsuneIcon from "./img/icons/satsune.svg";
 import data from "./data/home.json";
+import { useEffect, useState } from "react";
+import gsap from "gsap";
 
 const Home = () => {
   const home = data.home;
+  const [isEndIntro, setIsEndIntro] = useState(false);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    // Stage 1: Bring the image in from left with a bounce effect
+    tl.to(".img-size-title", {
+      x: 0,
+      delay: 1,
+      duration: 3,
+      ease: "elastic.out(1, 0.5)",
+      rotation: 10,
+      onComplete: () => {
+        // Add a subtle pulse/glow effect while centered
+        gsap.to(".img-size-title", {
+          scale: 1.2,
+          filter: "drop-shadow(0 0 30px rgba(255, 255, 255, 0.8))",
+          duration: 0.8,
+          yoyo: true,
+          repeat: 1,
+        });
+      },
+    })
+
+      // Stage 2: Scale the image down and move it to top
+      .to(".img-size-title", {
+        scale: 1,
+        // y: "-20vh",
+        rotation: 0,
+        duration: 0.8,
+        delay: 0.5,
+        ease: "power2.inOut",
+        onComplete: () => {
+          console.log("show home");
+          setIsEndIntro(true);
+        },
+      });
+  }, []);
 
   return (
-    <main className="main">
+    <main className={"main hero " + (isEndIntro && "end-intro")}>
       <section className="hero-section section text-center">
         <div
           className="headline mx-auto margin-block-start-15"
@@ -25,12 +65,12 @@ const Home = () => {
             src={title}
             alt=""
           />
-          <h2 className="fw-default fs-100 clr-primary-000 text-right">
+          <h2 className="hero-subtitle fw-default fs-100 clr-primary-000 text-right">
             {home.subtitle}
           </h2>
         </div>
         <Link to={"/articles"}>
-          <button className="button primary fs-400 clr-accent-800 fw-bold box-shadow-1 margin-block-start-12">
+          <button className="hero-button button primary fs-400 clr-accent-800 fw-bold box-shadow-1 margin-block-start-12">
             See our articles
           </button>
         </Link>

@@ -82,3 +82,41 @@
     }
   }
 }
+
+.hero {
+  .hero-subtitle {
+    opacity: 0;
+    transition: 1s 0.5s linear;
+  }
+  .hero-button {
+    opacity: 0;
+    transition: 1s 0.5s linear;
+  }
+  .satsune-icon {
+    opacity: 0;
+    transition: 1s 0.5s linear;
+  }
+  .gallery-slider {
+    opacity: 0;
+    transition: 1s 0.5s linear;
+  }
+
+  &.end-intro {
+    .hero-subtitle {
+      opacity: 1;
+    }
+    .hero-button {
+      opacity: 1;
+    }
+    .satsune-icon {
+      opacity: 1;
+    }
+    .gallery-slider {
+      opacity: 1;
+    }
+  }
+}
+
+.img-size-title {
+  transform: translateX(-100vw);
+}

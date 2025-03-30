@@ -57,7 +57,12 @@ const Navbar = () => {
 
   window.addEventListener("scroll", handleScroll);
   return (
-    <header onScroll={handleScroll} className="site-header bg-primary-600">
+    <header
+      onScroll={handleScroll}
+      className={
+        "site-header bg-primary-600 " + (activeNav === "home" && "hero-intro")
+      }
+    >
       <div className="wrap container">
         <Link to={"/"} className="logo">
           <img src={logo} alt="site header logo" />
