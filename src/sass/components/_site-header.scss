@@ -65,6 +65,7 @@
       z-index: 1000;
       transition: right 300ms;
       box-shadow: -2px 0 12.5px $color-neutral-1000;
+      height: 100vh;
 
       &.hidden {
         right: -100%;
@@ -132,7 +133,7 @@
 // home nav animation
 .site-header.hero-intro {
   transform: translateY(-100%);
-  animation: showSiteHeader 0.3s 6.5s forwards;
+  animation: showSiteHeader 1s 6s linear forwards;
 }
 
 @keyframes showSiteHeader {

@@ -47,7 +47,6 @@ const Home = () => {
         delay: 0.5,
         ease: "power2.inOut",
         onComplete: () => {
-          console.log("show home");
           setIsEndIntro(true);
         },
       });
@@ -70,9 +69,11 @@ const Home = () => {
           </h2>
         </div>
         <Link to={"/articles"}>
-          <button className="hero-button button primary fs-400 clr-accent-800 fw-bold box-shadow-1 margin-block-start-12">
-            See our articles
-          </button>
+          <div className="hero-button">
+            <button className="button primary fs-400 clr-accent-800 fw-bold box-shadow-1 margin-block-start-12">
+              See our articles
+            </button>
+          </div>
         </Link>
         <div className="satsune-icon left">
           <img src={satsuneIcon} alt="" />
