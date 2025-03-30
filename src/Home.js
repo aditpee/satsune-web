@@ -68,13 +68,13 @@ const Home = () => {
             {home.subtitle}
           </h2>
         </div>
-        <Link to={"/articles"}>
-          <div className="hero-button">
+        <div className="hero-button">
+          <Link to={"/articles"}>
             <button className="button primary fs-400 clr-accent-800 fw-bold box-shadow-1 margin-block-start-12">
               See our articles
             </button>
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className="satsune-icon left">
           <img src={satsuneIcon} alt="" />
           <div className="line"></div>
